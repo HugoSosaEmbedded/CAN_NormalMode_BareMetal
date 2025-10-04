@@ -16,6 +16,12 @@ void CAN1_TX(void);
 void USART3_Init(void);
 void GPIO_USART3(void);
 void Swap_Buffer(void);
+void TIM4_Init(void);
+void GPIO_LED(void);
+void CAN1_Send(uint16_t id, uint8_t* data);
+uint8_t CAN1_Received(void);
+void CAN1_SetFlag(void);
+
 
 //-----------------------------------------------------------------------------------------------------------------------------------------
 #define BUFFER_SIZE 64
